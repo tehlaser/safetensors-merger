@@ -28,6 +28,6 @@ def get_safetensor_files(directory):
 
 if __name__ == "__main__":
     safetensor_files = get_safetensor_files("./shards")
-    print(f"The fllowing shards/chunks will be merged : {safetensor_files}")
+    print(f"The following shards/chunks will be merged : {safetensor_files}")
     
     merge_safetensor_files(safetensor_files, output_file="./output/merged_model.safetensors")
